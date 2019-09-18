@@ -19,13 +19,16 @@ import { AddressFormComponent } from './address-form/address-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MyDragDropComponent } from './my-drag-drop/my-drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatListComponent } from './mat-list/mat-list.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyNavComponent,
     AddressFormComponent,
-    MyDragDropComponent
+    MyDragDropComponent,
+    MatListComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
+    MatCheckboxModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
@@ -42,9 +46,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatRadioModule,
     MatCardModule,
     ReactiveFormsModule,
-    DragDropModule
+    DragDropModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
