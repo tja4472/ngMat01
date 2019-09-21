@@ -23,6 +23,7 @@ import { MatListComponent } from './mat-list/mat-list.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { List1Component } from './list1/list1.component';
 import { FlexComponent } from './flex/flex.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FlexComponent } from './flex/flex.component';
     MyNavComponent,
     AddressFormComponent,
     FlexComponent,
+    HomeComponent,
     MyDragDropComponent,
     MatListComponent,
     List1Component,
