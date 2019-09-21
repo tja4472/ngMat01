@@ -1,3 +1,10 @@
+:host {
+  background-color: green;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
 /* Highlight the list item that is being dragged. */
 .cdk-drag-preview {
   border-radius: 4px;
@@ -8,7 +15,7 @@
 /* Animate items as they're being sorted. */
 .cdk-drop-dragging .cdk-drag {
   transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
-  background-color: blue
+  background-color: blue;
 }
 
 /* Animate an item that has been dropped. */
@@ -20,29 +27,55 @@
   opacity: 0;
 }
 
-.list-item {
+.cclist {
+  flex-grow: 1;
+  flex-basis: 0px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+/*
+  flex-shrink: 1;
+  min-height: 0px;
+  flex-basis: 0;
+  list-style-type: none;
+  flex-wrap: nowrap;  
+*/
+
+.cclist-item {
+  display: flex;
+  flex-wrap: nowrap;
   padding: 20px 10px;
   border-bottom: solid 1px #ccc;
   box-sizing: border-box;
-  cursor: move;
   background: white;
-  color: black;
-  font-size: 14px;
 }
 
-.aamat-list-icon {
+.name {
+  color: black;
+  font-weight: bold;
+}
+
+.description {
+  color: lightgray;
+}
+
+.a {
+  flex-grow: 1;
+}
+
+.b {
   cursor: move;
 }
-.bb:active {
+
+.c {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+/*
+.c:active {
   background-color: blue;
 }
-
-.mat-list-item:active{
-  background-color: blue;
-}
-
-.mat-checkbox{
-  position: absolute;
-  left: 0px;  
-}
-
+*/

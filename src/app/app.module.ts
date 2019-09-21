@@ -21,14 +21,18 @@ import { MyDragDropComponent } from './my-drag-drop/my-drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatListComponent } from './mat-list/mat-list.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { List1Component } from './list1/list1.component';
+import { FlexComponent } from './flex/flex.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyNavComponent,
     AddressFormComponent,
+    FlexComponent,
     MyDragDropComponent,
     MatListComponent,
+    List1Component,
   ],
   imports: [
     BrowserModule,
