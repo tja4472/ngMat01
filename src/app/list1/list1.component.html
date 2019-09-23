@@ -1,16 +1,16 @@
-<div class="cclist" cdkDropList (cdkDropListDropped)="drop($event)">
+<div class="list" cdkDropList (cdkDropListDropped)="drop($event)">
   <div cdkDrag cdkDragLockAxis="y" *ngFor="let todo of todos">
-    <div class="cclist-item">
+    <div class="list-item">
       <mat-checkbox></mat-checkbox>
 
-      <div class="c">
-        <div class="a">
+      <a [routerLink]="['/home', todo.id]">
+        <div class="middle">
           <div class="name">{{ todo.name }}</div>
           <div class="description">{{ todo.description }}</div>
         </div>
+      </a>
 
-        <mat-icon class="b" cdkDragHandle>drag_handle</mat-icon>
-      </div>
+      <mat-icon cdkDragHandle>drag_handle</mat-icon>
     </div>
   </div>
 </div>

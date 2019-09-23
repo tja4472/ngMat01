@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'mat-list', component: MatListComponent },
   { path: 'list-1', component: List1Component },
   { path: 'flex', component: FlexComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'home/:id', component: HomeComponent },
 ];
 
 @NgModule({
